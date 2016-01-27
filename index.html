@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>South Beloit Fire Department</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="http://yourfirstdue.com/manager/data/img/favicon.ico">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+
+    <style type="text/css">
+      @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+      #feedControl {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width : 80%;
+        font-size: 12px;
+        color: red;
+        height: 400px;
+      }
+    </style>
+    <script type="text/javascript">
+      function load() {
+        var feed ="http://www.firerescue1.com/firefighting-rss-feeds/news.xml";
+        new GFdynamicFeedControl(feed, "feedControl");
+      }
+      google.load("feeds", "1");
+      google.setOnLoadCallback(load);
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                  <h2><font color = white>Menu</font></h2>
+                </li>
+                <li>
+                    <a href="index.html"><h3>Home</h3></a>
+                </li>
+                <li>
+                    <a href="ffassociation.html">Firefighter's Association</a>
+                </li>
+                <li>
+                    <a href="deptnews.html">Department News</a>
+                </li>
+                <li>
+                    <a href="filesandforms.html">Files and Forms</a>
+                </li>
+                <li>
+                    <a href="shiftcalendar.html">Shift Calendar</a>
+                </li>
+                <li>
+                    <a href="fireglossary.html">Fire Glossary</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <a href="apparatus.html">Apparatus</a>
+                </li>
+                <li>
+                    <a href="calendar.html">Calendar</a>
+                </li>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="erg.html">ERG</a>
+                </li>
+                <li>
+                    <a href="links.html">Links</a>
+                </li>
+                <li>
+                    <a href="pictures.html">Pictures</a>
+                </li>
+                <li>
+                    <a href="members.html">Members</a>
+                </li>
+                <li>
+                    <a href="thefallen.html">The Fallen</a>
+                </li>
+                <li>
+                    <a href="guestbook.html">Guestbook</a>
+                </li>
+            </ul>
+      </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <div id="top-border">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" style="margin-top: 30px;">Show/Hide Menu</a>
+                        <h1>Home</h1>
+                        <p>Welcome to the South Beloit Fire Department Official Website!  Use the menu to navigate the different pages.</p>
+                        <br>
+                        <h3>Nationwide Fire News</h3>
+                        <div id="feedControl">Loading...</div>
+                        <img src="City-of-South-Beloit-Illinois-37.jpg" style="margin-top: 220px; height: 40%;">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
